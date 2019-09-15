@@ -1,0 +1,156 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\title{Modelos 3}
+\author{Clinton Samaniego}
+\date{September 2019}
+\arrayrulecolor[HTML]{DB5800}
+\setlength{\arrayrulewidth}{0.5mm}
+
+
+\begin{document}
+\maketitle
+\section{Ejercicios en \LaTeX}
+\begin{itemize}
+    \item Tabla \ref{tabla:1}
+    \item Tabla \ref{tabla:2}
+    \item Tabla \ref{tabla:3}
+    \item Tabla \ref{tabla:4}
+    \item Tabla \ref{tab:my_label}
+\end{itemize}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htbp]
+\caption{Autores españoles}
+\begin{center}
+\begin{tabular}{lm{20em}lm{20em} }
+\hline
+Autor& Poema \\ 
+\hline
+\hline
+Espronceda & con diez cañones por banda, viento en popa, a toda vela, no corta el mar, sino vuela en velero bergantín...\\ 
+\hline
+Beequer& Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamaran\\ 
+\hline
+\end{tabular}
+\end{center}
+\label{tabla:1}
+\end{table}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htbp]
+\centering
+\caption{Tabla inclinada}
+\label{tabla:2}
+\begin{sideways}
+\begin{tabular}{ |c|c|c||c|c|c||c|c|c||c|c|c||c|c|c||c|c|c| } 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\  
+ \hline
+cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\  
+ \hline
+cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\  
+ \hline
+cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+  cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\  
+ \hline
+cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\  
+ \hline
+cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+ cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\  
+ \hline
+cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell & cell1 & cell2 & cell3 & cell1 & cell2 & cell & cell1 & cell2 & cell\\ 
+ \hline
+\end{tabular}
+\end{sideways}
+\end{table}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htbp]
+    \centering
+   \begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{Country List} \\
+ \hline
+ Country Name     or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 Code&ISO numeric Code\\
+ \hline
+ Afghanistan   & AF    &AFG&   004\\
+ Aland Islands&   AX  & ALA   &248\\
+ Albania &AL & ALB&  008\\
+ Algeria    &DZ & DZA&  012\\
+ American Samoa&   AS  & ASM&016\\
+ Andorra& AD  & AND   &020\\
+ Angola& AO  & AGO&024\\
+ \hline
+\end{tabular}
+\caption{Países}
+\label{tabla:3}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{table}
+  \caption{Universidades}
+\begin{tabular}{ ||l||m{20em}||  } 
+\hline
+\multicolumn{2}{|c|}{T. G} \\
+\hline
+Part 1 & Parte 2\\
+\hline
+\includegraphics[width=0.3\linewidth, height=3cm]{fig1.png} & The National University of San Marcos (Spanish: Universidad Nacional Mayor de San Marcos, UNMSM) is a public research university in Lima, capital of Peru. Also known as the "University of Peru" and the "Dean University of the Americas", it is the first officially established (privilege by Charles V, Holy Roman Emperor) and the longest continuously operating university in the Americas.[6] Since its foundation, it was commonly referred as the "Royal and Pontifical University of the City of the Kings of Lima" till Viceroyaltie period, and with republic ages till now, like "San Marcos or Universidad Nacional Mayor de San Marcos, or "La Deacana de América".\\ 
+\hline
+\hline
+\includegraphics[width=0.3\linewidth, height=3cm]{fig2.jpg} & The National University of Engineering was founded in 1876 by the Polish engineer Edward Jan Habich as the School of Civil Constructions and Mining Engineers (Spanish: Escuela de Ingenieros de Construcciones Civiles y de Minas), but has traditionally been known as School of Engineers (Escuela de Ingenieros). At the time of its foundation, there was a growing demand for engineers in Peru due to the rapid development of mining and communications  \\ 
+\hline
+\end{tabular}
+\label{tabla:4}
+\end{table}
+\newpage
+\begin{table}[htbp]
+\setlength{\arrayrulewidth}{0.5mm}
+\newcolumntype{s}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+    \centering
+    \begin{tabular}{ |c|p{3cm}|p{3cm}|  }
+\hline
+\rowcolor{green} \multicolumn{3}{|c|}{Country List} \\
+\hline
+Country Name    or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 \\
+\hline
+Afghanistan & AF &AFG \\
+\rowcolor{blue}
+Aland Islands & AX & ALA \\
+Albania   &AL & ALB \\
+Algeria  &DZ & DZA \\
+American Samoa & AS & ASM \\
+Andorra & AD & \cellcolor[HTML]{AA0044} AND    \\
+Angola & AO & AGO \\
+\hline
+\end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+\end{document}
