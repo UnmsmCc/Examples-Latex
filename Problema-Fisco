@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{;odelos matematicos III}
+\author{Clinton Samaniego}
+\date{Setiembre 2019}
+
+\begin{document}
+
+\maketitle
+
+\section*{Ejercicio 80}
+Siendo $x=u_{1}^{2}+2, y=u_{1}+u_{2}, z=u_{3}^{2}-u_{1}$ hallar (a) g y (b) el Jacobiano $J=\frac{\partial(x,y,z)}{\partial(u_{1},u_{2},u_{3})}$. Comprobar que $J^{2}=g$
+
+\section*{Solución}
+De los la pregunta tenemos:
+\begin{align*}
+x&=u_{1}^{2}                    &  y&=u_{1}+u_{2}  &  z&==u_{3}^{2}-u_{1}\\
+\frac{\partial x}{u_{1}}&=2u_{1}& \frac{\partial y}{u_{1}}&=1 &\frac{\partial z}{u_{1}}&=-1 \\
+\frac{\partial x}{u_{2}}&=0     &\frac{\partial y}{u_{2}}&=1 &\frac{\partial z}{u_{2}}&=0 \\
+\frac{\partial x}{u_{3}}&=0     &\frac{\partial y}{u_{3}}&=0 &\frac{\partial z}{u_{3}}&=2u_{3} 
+\end{align*}
+
+Sabemos que \textbf{\textit{g}} esta compuesto por los coeficientes de métricos dela longitud de arco $ds^{2}$:
+
+\begin{equation*}
+    g=\left|\begin{matrix}
+\frac{\partial x}{u_{1}}&  \frac{\partial y}{u_{1}}& \frac{\partial z}{u_{1}}\\
+\frac{\partial x}{u_{2}}&  \frac{\partial y}{u_{2}}& \frac{\partial z}{u_{2}}\\
+\frac{\partial x}{u_{3}}&  \frac{\partial y}{u_{3}}& \frac{\partial z}{u_{3}}
+\end{matrix}\right|^{2}=\left|\begin{matrix}
+2u_{1} & 1 & -1\\
+0 & 1 & 0\\
+0 & 0 & 2u_{3} 
+\end{matrix}\right|^2=\left|\begin{matrix}
+2u_{1} & 1 & -1\\
+0 & 1 & 0\\
+0 & 0 & 2u_{3} 
+\end{matrix}\right|\left|\begin{matrix}
+2u_{1} & 1 & -1\\
+0 & 1 & 0\\
+0 & 0 & 2u_{3} 
+\end{matrix}\right|=16u_{1}^{2}u_{3}^{2}
+\end{equation*}
+y el Jacobiano es;
+\begin{equation*}
+ J=\left|\begin{matrix}
+\frac{\partial x}{u_{1}}&  \frac{\partial y}{u_{1}}& \frac{\partial z}{u_{1}}\\
+\frac{\partial x}{u_{2}}&  \frac{\partial y}{u_{2}}& \frac{\partial z}{u_{2}}\\
+\frac{\partial x}{u_{3}}&  \frac{\partial y}{u_{3}}& \frac{\partial z}{u_{3}}
+\end{matrix}\right|=\left|\begin{matrix}
+2u_{1} & 1 & -1\\
+0 & 1 & 0\\
+0 & 0 & 2u_{3} 
+\end{matrix}\right| =4u_{1}u_{3} 
+\end{equation*}
+Podemos observar claramente que si elevamos $J$ al cuadrado obtenemos $g$, por lo tanto $j^{2}=g$
+\end{document}
